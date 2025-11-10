@@ -1,16 +1,8 @@
-{% load static %}
+{% extends 'layout.html' %}
+{% block title %}Home{% endblock %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% block content %}
     <h1>Welcome to the Home Page</h1>
     <p>This is the home page of the website boola.</p>
     <p><a href="{% url 'about' %}">Learn more about us</a></p>
-</body>
-</html>
+{% endblock %}
